@@ -1,0 +1,51 @@
+{
+    "aws.logLevel": "info",
+    "aws.samcli.location": "C:\\Program Files\\Amazon\\AWSSAMCLI\\bin\\sam.cmd",
+    "aws.telemetry": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.fontSize": 13,
+    "editor.insertSpaces": true,
+    "editor.suggestFontSize": 10,
+    "editor.tabSize": 4,
+    "explorer.confirmDelete": false,
+    "files.autoSave": "afterDelay",
+    "shellLauncher.shells.windows": [
+        {
+            "shell": "C:\\Windows\\System32\\cmd.exe",
+            "label": "Cmd"
+        },
+        {
+            "shell": "C:\\Program Files\\Git\\bin\\bash.exe",
+            "label": "Git bash"
+        },
+        {
+            "shell": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+            "label": "PowerShell"
+        },
+        {
+            "shell": "C:\\Windows\\System32\\bash.exe",
+            "label": "WSL Bash"
+        }
+    ],
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "terminal.integrated.fontSize": 13,
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
+    "window.zoomLevel": -1.2,
+    // https://code.visualstudio.com/api/references/theme-color
+    "workbench.colorCustomizations": {
+        "[Monokai Dimmed]": {
+            "editor.background": "#000000",
+            "sideBar.background": "#000000"
+        },
+        "[Night Owl (No Italics)]": {
+            "terminal.ansiGreen": "#223322"
+        }
+    },
+    "workbench.colorTheme": "Night Owl (No Italics)",
+    "workbench.preferredDarkColorTheme": "Monokai Dimmed",
+    // Output panel
+    "[Log]": {
+        "editor.fontSize": 13
+    }
+}

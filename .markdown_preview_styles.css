@@ -1,0 +1,27 @@
+body {
+	font-size: 13px;
+}
+h1 {
+	font-size: 2.2em;
+}
+h2 {
+	font-size: 1.4em;
+}
+h3 {
+	font-size: 1.2em;
+}
+h4 {
+	font-size: 1.2em;
+}
+h5, h6 {
+	font-size: 1.1em;
+}
+blockquote {
+	font-size: 1em;
+}
+code {
+    font-size: 1em;
+}
+pre {
+	font-size: 0.9em;
+}
