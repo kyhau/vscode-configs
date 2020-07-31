@@ -9,4 +9,4 @@ set "CODE_VER=Code - Insiders"
 
 set "SRC_DIR=C:\Workspaces\github\vscode-configs"
 
-%CODE% --diff %SRC_DIR%\settings.json "%APPDATA%\%CODE_VER%\User\settings.json"
+%CODE% --diff %SRC_DIR%\User\settings.json "%APPDATA%\%CODE_VER%\User\settings.json"
