@@ -3,6 +3,7 @@
     "aws.samcli.location": "C:\\Program Files\\Amazon\\AWSSAMCLI\\bin\\sam.cmd",
     "aws.telemetry": false,
     "diffEditor.ignoreTrimWhitespace": false,
+    "editor.detectIndentation": false,
     "editor.fontSize": 13,
     "editor.insertSpaces": true,
     "editor.suggestFontSize": 10,
@@ -44,8 +45,13 @@
     },
     "workbench.colorTheme": "Night Owl (No Italics)",
     "workbench.preferredDarkColorTheme": "Monokai Dimmed",
-    // Output panel
-    "[Log]": {
-        "editor.fontSize": 13
+    "[bat]": {
+        "editor.tabSize": 2
+    },
+    "[dockerfile]": {
+        "editor.tabSize": 2
+    },
+    "[shellscript]": {
+        "editor.tabSize": 2
     }
 }
