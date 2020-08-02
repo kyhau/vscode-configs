@@ -8,6 +8,29 @@
         ],
         "description": "Add line to retrieve file name without extension"
     },
+    "aws-lambda-handler": {
+        "prefix": "aws-lambda-handler",
+        "body": [
+            "def respond(message, status_code=200):",
+            "    import logging",
+            "    logging.info(message)",
+            "    resp = {",
+            "        'text': message,",
+            "    }",
+            "    return {",
+            "        'body': json.dumps(resp),",
+            "        'headers': {",
+            "            'Content-Type': 'application/json',",
+            "        },",
+            "        'statusCode': status_code,",
+            "    }",
+            "",
+            "",
+            "def lambda_handler(event, context):",
+            "    pass"
+        ],
+        "description": "Add lambda handler"
+    },
     "aws-profiles-from-credentials-file": {
         "prefix": "aws-profiles-from-credentials-file",
         "body": [
@@ -27,6 +50,7 @@
         "prefix": "boto3-import-n-logger",
         "body": [
             "from boto3.session import Session",
+            "import boto3",
             "import logging",
             "",
             "logging.getLogger().setLevel(logging.DEBUG)",
