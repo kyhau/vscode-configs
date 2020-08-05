@@ -10,6 +10,7 @@
     "editor.tabSize": 4,
     "explorer.confirmDelete": false,
     "files.autoSave": "afterDelay",
+    "python.linting.pylintEnabled": true,
     "shellLauncher.shells.windows": [
         {
             "shell": "C:\\Windows\\System32\\cmd.exe",
@@ -62,5 +63,8 @@
     },
     "[shellscript]": {
         "editor.tabSize": 2
+    },
+    "files.associations": {
+        "*.py": "python"
     }
 }
