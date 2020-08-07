@@ -10,6 +10,10 @@
     "editor.tabSize": 4,
     "explorer.confirmDelete": false,
     "files.autoSave": "afterDelay",
+    "python.linting.pylintArgs": [
+        "--enable=W0614"
+    ],
+    "python.linting.enabled": true,
     "python.linting.pylintEnabled": true,
     "shellLauncher.shells.windows": [
         {
@@ -63,8 +67,5 @@
     },
     "[shellscript]": {
         "editor.tabSize": 2
-    },
-    "files.associations": {
-        "*.py": "python"
     }
 }
