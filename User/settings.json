@@ -10,10 +10,12 @@
     "editor.tabSize": 4,
     "explorer.confirmDelete": false,
     "files.autoSave": "afterDelay",
-    "python.linting.pylintArgs": [
-        "--enable=W0614"
-    ],
+    "files.trimTrailingWhitespace": true,
     "python.linting.enabled": true,
+    "python.linting.pylintArgs": [
+        "--enable=W0614",
+        "--logging-format-style=fstr"
+    ],
     "python.linting.pylintEnabled": true,
     "shellLauncher.shells.windows": [
         {
@@ -40,16 +42,19 @@
     "window.zoomLevel": -1.2,
     // https://code.visualstudio.com/api/references/theme-color
     "workbench.colorCustomizations": {
+        "tree.indentGuidesStroke": "#fffb04",
         "[Monokai Dimmed]": {
             "editor.background": "#000000",
             "sideBar.background": "#000000"
         },
         "[Night Owl (No Italics)]": {
-            "terminal.ansiGreen": "#223322"
+            "terminal.ansiGreen": "#497a49"
         }
     },
     "workbench.colorTheme": "Night Owl (No Italics)",
     "workbench.preferredDarkColorTheme": "Monokai Dimmed",
+    "workbench.tree.indent": 20,
+    "workbench.tree.renderIndentGuides": "always",
     "[bat]": {
         "editor.tabSize": 2
     },
