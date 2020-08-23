@@ -3,6 +3,7 @@
     "aws.samcli.location": "C:\\Program Files\\Amazon\\AWSSAMCLI\\bin\\sam.cmd",
     "aws.telemetry": false,
     "diffEditor.ignoreTrimWhitespace": false,
+    "editor.codeLens": true,
     "editor.detectIndentation": false,
     "editor.fontSize": 13,
     "editor.insertSpaces": true,
@@ -11,12 +12,14 @@
     "explorer.confirmDelete": false,
     "files.autoSave": "afterDelay",
     "files.trimTrailingWhitespace": true,
+    "python.autoUpdateLanguageServer": true,
     "python.linting.enabled": true,
     "python.linting.pylintArgs": [
         "--enable=W0614",
         "--logging-format-style=fstr"
     ],
     "python.linting.pylintEnabled": true,
+    "search.useGlobalIgnoreFiles": true,
     "shellLauncher.shells.windows": [
         {
             "shell": "C:\\Windows\\System32\\cmd.exe",
@@ -55,6 +58,36 @@
     "workbench.preferredDarkColorTheme": "Monokai Dimmed",
     "workbench.tree.indent": 20,
     "workbench.tree.renderIndentGuides": "always",
+    "yaml.customTags": [
+        "!And",
+        "!And sequence",
+        "!If",
+        "!If sequence",
+        "!Not",
+        "!Not sequence",
+        "!Equals",
+        "!Equals sequence",
+        "!Or",
+        "!Or sequence",
+        "!FindInMap",
+        "!FindInMap sequence",
+        "!Base64",
+        "!Join",
+        "!Join sequence",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!Sub sequence",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!ImportValue sequence",
+        "!Select",
+        "!Select sequence",
+        "!Split",
+        "!Split sequence"
+    ],
+    "yaml.validate": false,
     "[bat]": {
         "editor.tabSize": 2
     },
@@ -72,6 +105,11 @@
     },
     "[powershell]": {
         "editor.tabSize": 2
+    },
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
     },
     "[shellscript]": {
         "editor.tabSize": 2
