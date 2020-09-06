@@ -1,11 +1,12 @@
 {
     "aws.logLevel": "info",
+    "aws.onDefaultRegionMissing": "ignore",
     "aws.samcli.location": "C:\\Program Files\\Amazon\\AWSSAMCLI\\bin\\sam.cmd",
     "aws.telemetry": false,
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.codeLens": true,
     "editor.detectIndentation": false,
-    "editor.fontSize": 13,
+    "editor.fontSize": 12,
     "editor.insertSpaces": true,
     "editor.suggestFontSize": 10,
     "editor.tabSize": 4,
@@ -13,6 +14,7 @@
     "files.autoSave": "afterDelay",
     "files.trimTrailingWhitespace": true,
     "python.autoUpdateLanguageServer": true,
+    "python.languageServer": "Microsoft",
     "python.linting.enabled": true,
     "python.linting.pylintArgs": [
         "--enable=W0614",
