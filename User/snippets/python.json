@@ -85,7 +85,7 @@
         "prefix": "click-command-main",
         "body": [
             "@click.command(help='TODO')",
-            "@click.option('--profile, '-p', default='default', show_default=True, help='AWS profile name')",
+            "@click.option('--profile', '-p', default='default', show_default=True, help='AWS profile name')",
             "@click.option('--region', '-r', default='ap-southeast-2', show_default=True, help='AWS Region; use `all` for all regions')",
             "def main(profile, region)",
             "    pass",
@@ -108,7 +108,7 @@
             "",
             "",
             "@main_cli.command(help='TODO cmd1')",
-            "@click.argument('var1', type=click.STRING, help='TODO var1')",
+            "@click.argument('var1', type=click.STRING)",
             "@click.pass_context",
             "def cmd1(ctx, var1):",
             "    ctx.ensure_object(dict)",
