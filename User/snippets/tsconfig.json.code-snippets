@@ -1,0 +1,14 @@
+{
+    "tsconfig-compilerOptions": {
+        "prefix": "tsconfig-compilerOptions",
+        "body": [
+          "\"compilerOptions\": {",
+          "    \"target\": \"es5\",",
+          "    \"module\": \"commonjs\",",
+          "    \"outDir\": \"out\",",
+          "    \"sourceMap\": true",
+          "}",
+        ],
+        "description": "Add default compilerOptions in a tsconfig.json"
+      }
+}

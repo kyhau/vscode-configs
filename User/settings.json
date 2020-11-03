@@ -98,7 +98,7 @@
         "editor.tabSize": 2
     },
     "[groovy]": {
-        "editor.tabSize": 2
+        "editor.tabSize": 4
     },
     "[html]": {
         "editor.tabSize": 2
@@ -110,7 +110,7 @@
         "editor.tabSize": 2
     },
     "[json]": {
-        "editor.tabSize": 2
+        "editor.tabSize": 4
     },
     "[powershell]": {
         "editor.tabSize": 2

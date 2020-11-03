@@ -136,7 +136,7 @@
   "click-option-boolean": {
     "prefix": "click-option-boolean",
     "body": [
-      "@click.option('--todo, '-t', show_default=True, is_flag=True)",
+      "@click.option('--todo', '-t', show_default=True, is_flag=True)",
     ],
     "description": "Add click boolean option"
   },
