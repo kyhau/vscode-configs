@@ -8,7 +8,10 @@
     "editor.detectIndentation": false,
     "editor.fontSize": 12,
     "editor.insertSpaces": true,
+    "editor.quickSuggestions":true,
+    "editor.snippetSuggestions":"top",
     "editor.suggestFontSize": 12,
+    "editor.tabCompletion": "on",
     "editor.tabSize": 4,
     "explorer.confirmDelete": false,
     "files.autoSave": "afterDelay",
@@ -44,7 +47,6 @@
     "telemetry.enableTelemetry": false,
     "terminal.integrated.fontSize": 12,
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
-    "window.zoomLevel": -1,
     // https://code.visualstudio.com/api/references/theme-color
     "workbench.colorCustomizations": {
         "tree.indentGuidesStroke": "#fffb04",
@@ -122,5 +124,12 @@
     },
     "[shellscript]": {
         "editor.tabSize": 2
-    }
+    },
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter-notebook",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "window.zoomLevel": -1
 }
