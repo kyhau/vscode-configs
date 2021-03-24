@@ -90,6 +90,7 @@
       "def main(profile, region):",
       "    pass",
       "",
+      "",
       "if __name__ == '__main__':",
       "     main()",
       ""
@@ -139,6 +140,13 @@
       "@click.option('--todo', '-t', is_flag=True, show_default=True, help='TODO')",
     ],
     "description": "Add click boolean option"
+  },
+  "click-option-choice": {
+    "prefix": "click-option-choice",
+    "body": [
+      "@click.option('--todo', type=click.Choice(['todo1', 'todo2SHA1'], case_sensitive=False))",
+    ],
+    "description": "Add click choice option"
   },
   "io-make-dir": {
     "prefix": "io-make-dir",
