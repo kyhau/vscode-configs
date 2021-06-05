@@ -17,6 +17,10 @@
     "explorer.confirmDelete": false,
     "files.autoSave": "afterDelay",
     "files.trimTrailingWhitespace": true,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
     "python.autoUpdateLanguageServer": true,
     "python.languageServer": "Pylance",
     "python.linting.enabled": true,
@@ -25,7 +29,11 @@
         "--logging-format-style=fstr"
     ],
     "python.linting.pylintEnabled": true,
+    "redhat.telemetry.enabled": false,
     "search.useGlobalIgnoreFiles": true,
+    // https://code.visualstudio.com/docs/editor/workspace-trust
+    "security.workspace.trust.enabled": false,
+    "security.workspace.trust.startupPrompt": "never",
     "shellLauncher.shells.windows": [
         {
             "shell": "C:\\Windows\\System32\\cmd.exe",
@@ -46,8 +54,9 @@
     ],
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-    "terminal.integrated.fontSize": 12,
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
+    "terminal.integrated.fontSize": 12,
+    "window.zoomLevel": -1,
     // https://code.visualstudio.com/api/references/theme-color
     "workbench.colorCustomizations": {
         "tree.indentGuidesStroke": "#fffb04",
@@ -64,13 +73,9 @@
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 20,
     "workbench.tree.renderIndentGuides": "always",
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter-notebook",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
-    "window.zoomLevel": -1,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
     "yaml.customTags": [
         "!And",
         "!And sequence",
@@ -120,7 +125,7 @@
         "editor.tabSize": 2
     },
     "[json]": {
-        "editor.tabSize": 4
+        "editor.tabSize": 2
     },
     "[powershell]": {
         "editor.tabSize": 2
