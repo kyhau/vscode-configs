@@ -4,7 +4,7 @@
     "prefix": "app-name",
     "body": [
       "from os.path import basename",
-      "APP_NAME = basename(__file__).split('.')[0]"
+      "APP_NAME = basename(__file__).split(\".\")[0]"
     ],
     "description": "Add line to retrieve file name without extension"
   },
@@ -15,14 +15,14 @@
       "    import logging",
       "    logging.info(message)",
       "    resp = {",
-      "        'text': message,",
+      "        \"text\": message,",
       "    }",
       "    return {",
-      "        'body': json.dumps(resp),",
-      "        'headers': {",
-      "            'Content-Type': 'application/json',",
+      "        \"body\": json.dumps(resp),",
+      "        \"headers\": {",
+      "            \"Content-Type\": \"application/json\",",
       "        },",
-      "        'statusCode': status_code,",
+      "        \"statusCode\": status_code,",
       "    }",
       "",
       "",
@@ -39,7 +39,7 @@
       "    from os.path import expanduser, join",
       "    try:",
       "        cp = ConfigParser()",
-      "        cp.read(join(expanduser('~'), '.aws', 'credentials'))",
+      "        cp.read(join(expanduser(\"~\"), \".aws\", \"credentials\"))",
       "        return cp.sections()",
       "     except Exception as e:",
       "        logging.error(e)"
@@ -54,11 +54,11 @@
       "import logging",
       "",
       "logging.getLogger().setLevel(logging.DEBUG)",
-      "logging.getLogger('botocore').setLevel(logging.CRITICAL)",
-      "logging.getLogger('boto3').setLevel(logging.CRITICAL)",
-      "logging.getLogger('urllib3.connectionpool').setLevel(logging.CRITICAL)",
+      "logging.getLogger(\"botocore\").setLevel(logging.CRITICAL)",
+      "logging.getLogger(\"boto3\").setLevel(logging.CRITICAL)",
+      "logging.getLogger(\"urllib3.connectionpool\").setLevel(logging.CRITICAL)",
       "#urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)",
-      "logging.info(f'boto3.__version__: {boto3.__version__}')"
+      "logging.info(f\"boto3.__version__: {boto3.__version__}\")"
     ],
     "description": "Add boto3 imports and set logger"
   },
@@ -66,7 +66,7 @@
     "prefix": "boto3-paginate",
     "body": [
       "params = {}",
-      "for page in client.get_paginator('todo').paginate(**params).result_key_iters():",
+      "for page in client.get_paginator(\"todo\").paginate(**params).result_key_iters():",
       "    for item in page:",
       "        print(item)"
     ],
@@ -77,21 +77,21 @@
     "body": [
       "from boto3.session import Session",
       "session = Session(profile_name=profile_name)",
-      "this_identity = session.client('sts').get_caller_identity()"
+      "this_identity = session.client(\"sts\").get_caller_identity()"
     ],
     "description": "Add boto3 session"
   },
   "click-command-main": {
     "prefix": "click-command-main",
     "body": [
-      "@click.command(help='TODO')",
-      "@click.option('--profile', '-p', default='default', show_default=True, help='AWS profile name')",
-      "@click.option('--region', '-r', default='ap-southeast-2', show_default=True, help='AWS Region; use `all` for all regions')",
+      "@click.command(help=\"TODO\")",
+      "@click.option(\"--profile\", \"-p\", default=\"default\", show_default=True, help=\"AWS profile name\")",
+      "@click.option(\"--region\", \"-r\", default=\"ap-southeast-2\", show_default=True, help=\"AWS Region; use `all` for all regions\")",
       "def main(profile, region):",
       "    pass",
       "",
       "",
-      "if __name__ == '__main__':",
+      "if __name__ == \"__main__\":",
       "     main()",
       ""
     ],
@@ -100,51 +100,51 @@
   "click-group": {
     "prefix": "click-group",
     "body": [
-      "@click.group(invoke_without_command=True, help='TODO Help 1')",
+      "@click.group(invoke_without_command=True, help=\"TODO Help 1\")",
       "@click.pass_context",
       "def main_cli(ctx):",
       "    if ctx.invoked_subcommand is not None:",
       "        return",
-      "    click.echo('I was invoked without subcommand')",
+      "    click.echo(\"I was invoked without subcommand\")",
       "",
       "",
-      "@main_cli.command(help='TODO cmd1')",
-      "@click.argument('var1', type=click.STRING)",
+      "@main_cli.command(help=\"TODO cmd1\")",
+      "@click.argument(\"var1\", type=click.STRING)",
       "@click.pass_context",
       "def cmd1(ctx, var1):",
       "    ctx.ensure_object(dict)",
       "",
       "",
-      "if __name__ == '__main__':",
-      "    main_cli(obj={'debug': 'true'})"
+      "if __name__ == \"__main__\":",
+      "    main_cli(obj={\"debug\": \"true\"})"
     ],
     "description": "Add click option"
   },
   "click-argument": {
     "prefix": "click-argument",
     "body": [
-      "@click.argument('filename', nargs=-1)  # -1 for unlimited number of arguments",
+      "@click.argument(\"filename\", nargs=-1)  # -1 for unlimited number of arguments",
     ],
     "description": "Add click argument"
   },
   "click-option": {
     "prefix": "click-option",
     "body": [
-      "@click.option('--todo', -t', default='default', show_default=True, help='TODO')",
+      "@click.option(\"--todo\", \"-t\", default=\"default\", show_default=True, help=\"TODO\")",
     ],
     "description": "Add click option"
   },
   "click-option-boolean": {
     "prefix": "click-option-boolean",
     "body": [
-      "@click.option('--todo', '-t', is_flag=True, show_default=True, help='TODO')",
+      "@click.option(\"--todo\", \"-t\", is_flag=True, show_default=True, help=\"TODO\")",
     ],
     "description": "Add click boolean option"
   },
   "click-option-choice": {
     "prefix": "click-option-choice",
     "body": [
-      "@click.option('--todo', type=click.Choice(['todo1', 'todo2SHA1'], case_sensitive=False))",
+      "@click.option(\"--todo\", type=click.Choice([\"todo1\", \"todo2SHA1\"], case_sensitive=False))",
     ],
     "description": "Add click choice option"
   },
@@ -166,7 +166,7 @@
       "def read_csv_file(filename):",
       "    with open(filename) as f:",
       "        reader = csv.reader(f)",
-      "        return [list(map(str.strip, row)) for row in reader if row and not row[0].startswith('#')]"
+      "        return [list(map(str.strip, row)) for row in reader if row and not row[0].startswith(\"#\")]"
     ],
     "description": "Read csv file"
   },
@@ -175,11 +175,11 @@
     "body": [
       "import csv",
       "",
-      "def write_csv_file(filename, items, delimiter=','):",
+      "def write_csv_file(filename, items, delimiter=\",\"):",
       "    # items: list of list",
-      "    with open(filename, 'w') as f:",
+      "    with open(filename, \"w\") as f:",
       "        for data in items:",
-      "            f.write(f'{delimiter.join(list(map(str, data)))}\\n')"
+      "            f.write(f\"{delimiter.join(list(map(str, data)))}\\n\")"
     ],
     "description": "Write csv file"
   },
@@ -200,7 +200,7 @@
       "import json",
       "",
       "def write_json_file(filename, data, indent=0, sort_keys=True):",
-      "    with open(filename, 'w') as f:",
+      "    with open(filename, \"w\") as f:",
       "        return json.dump(data, f, indent=indent, sort_keys=sort_keys)"
     ],
     "description": "Write json file"
@@ -221,7 +221,7 @@
       "    with open(filename) as f:",
       "        # ignore empty/commented line",
       "        lns = f.readlines()",
-      "        return [x.strip() for x in lns if x.strip() and not x.strip().startswith('#')]"
+      "        return [x.strip() for x in lns if x.strip() and not x.strip().startswith(\"#\")]"
     ],
     "description": "Read lines from txt file"
   },
@@ -232,7 +232,7 @@
       "    pass",
       "",
       "",
-      "if __name__ == '__main__':",
+      "if __name__ == \"__main__\":",
       "     main()",
       ""
     ],

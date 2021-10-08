@@ -15,6 +15,7 @@
     "editor.tabCompletion": "on",
     "editor.tabSize": 4,
     "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
     "files.autoSave": "afterDelay",
     "files.trimTrailingWhitespace": true,
     "notebook.cellToolbarLocation": {
@@ -41,7 +42,7 @@
         },
         {
             "shell": "C:\\Program Files\\Git\\bin\\bash.exe",
-            "label": "Git bash"
+            "label": "Git Bash"
         },
         {
             "shell": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
@@ -52,10 +53,11 @@
             "label": "WSL Bash"
         }
     ],
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
-    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
+    "telemetry.telemetryLevel": "off",
+    "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
     "terminal.integrated.fontSize": 12,
+    "terminal.integrated.profiles.windows": {
+    },
     "window.zoomLevel": -1,
     // https://code.visualstudio.com/api/references/theme-color
     "workbench.colorCustomizations": {
@@ -105,6 +107,8 @@
         "!Split",
         "!Split sequence"
     ],
+    "yaml.schemas": {
+    },
     "yaml.validate": false,
     "[bat]": {
         "editor.tabSize": 2
