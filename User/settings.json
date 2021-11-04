@@ -18,6 +18,7 @@
     "explorer.confirmDragAndDrop": false,
     "files.autoSave": "afterDelay",
     "files.trimTrailingWhitespace": true,
+    "json.schemas": [],
     "notebook.cellToolbarLocation": {
         "default": "right",
         "jupyter-notebook": "left"
@@ -51,10 +52,15 @@
         {
             "shell": "C:\\Windows\\System32\\bash.exe",
             "label": "WSL Bash"
+        },
+        {
+            "shell": "C:\\Windows\\System32\\wsl.exe",
+            "args": ["-d", "Ubuntu-20.04"],
+            "label": "WSL Ubuntu-20.04"
         }
     ],
     "telemetry.telemetryLevel": "off",
-    "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+    "terminal.integrated.defaultProfile.windows": "Ubuntu-20.04 (WSL)",
     "terminal.integrated.fontSize": 12,
     "terminal.integrated.profiles.windows": {
     },
