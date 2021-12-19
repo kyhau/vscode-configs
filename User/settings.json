@@ -60,11 +60,32 @@
         }
     ],
     "telemetry.telemetryLevel": "off",
-    "terminal.integrated.defaultProfile.windows": "Ubuntu-20.04 (WSL)",
+    "terminal.integrated.defaultProfile.windows": "WSL Ubuntu",
     "terminal.integrated.fontSize": 12,
     "terminal.integrated.profiles.windows": {
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "WSL Ubuntu": {
+            "path": "C:\\WINDOWS\\System32\\wsl.exe",
+            "args": [
+                "-d",
+                "Ubuntu"
+            ]
+        }
     },
-    "window.zoomLevel": -1,
     // https://code.visualstudio.com/api/references/theme-color
     "workbench.colorCustomizations": {
         "tree.indentGuidesStroke": "#fffb04",
@@ -147,5 +168,6 @@
     },
     "[shellscript]": {
         "editor.tabSize": 2
-    }
+    },
+    "window.zoomLevel": -1
 }

@@ -81,6 +81,21 @@
     ],
     "description": "Add boto3 session"
   },
+  "botocore-exceptions-clienterror": {
+    "prefix": "botocore-exceptions-clienterror",
+    "body": [
+      "from botocore.exceptions import ClientError",
+      "",
+      "try:",
+      "    pass",
+      "except ClientError as e:",
+      "    print(e.response[\"Error\"][\"Code\"])",
+      "    if e.response[\"Error\"][\"Code\"] in [\"TODO\"]:",
+      "        pass",
+    ],
+    "description": "Add botocore.exceptions.ClientError"
+  },
+
   "click-command-main": {
     "prefix": "click-command-main",
     "body": [
