@@ -95,7 +95,6 @@
     ],
     "description": "Add botocore.exceptions.ClientError"
   },
-
   "click-command-main": {
     "prefix": "click-command-main",
     "body": [
@@ -252,6 +251,30 @@
       ""
     ],
     "description": "Add main function with no argument"
+  },
+  "map-str": {
+    "prefix": "map-str",
+    "body": [
+      "data = []",
+      "ret = list(map(str, data))"
+    ],
+    "description": "Convert all items in a collection to str"
+  },
+  "map-strip": {
+    "prefix": "map-strip",
+    "body": [
+      "data = []",
+      "ret = list(map(str.strip, data))"
+    ],
+    "description": "Strip all items in a collection"
+  },
+  "os-makedirs": {
+    "prefix": "os-makedirs",
+    "body": [
+      "from os import makedirs",
+      "create_dir = lambda d: makedirs(d, 0o755, exist_ok=True)"
+    ],
+    "description": "Create directory if not exists"
   },
   "yaml-dump-dict": {
     "prefix": "yaml-dump-dict",
