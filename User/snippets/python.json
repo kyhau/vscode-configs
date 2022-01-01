@@ -106,7 +106,7 @@
       "",
       "",
       "if __name__ == \"__main__\":",
-      "     main()",
+      "    main()",
       ""
     ],
     "description": "Add main function"
@@ -161,6 +161,35 @@
       "@click.option(\"--todo\", type=click.Choice([\"todo1\", \"todo2SHA1\"], case_sensitive=False))",
     ],
     "description": "Add click choice option"
+  },
+  "fire-on-function": {
+    "prefix": "fire-on-function",
+    "body": [
+        "import fire",
+        "def double(number):",
+        "    print(2 * number)",
+        "",
+        "",
+        "if __name__ == \"__main__\":",
+        "    fire.Fire(double)",
+        ""
+      ],
+    "description": "Call Fire on a function"
+  },
+  "fire-on-class": {
+    "prefix": "fire-on-class",
+    "body": [
+        "import fire",
+        "class Calculator(object):",
+        "    def double(self, number):",
+        "        print(2 * number)",
+        "",
+        "",
+        "if __name__ == \"__main__\":",
+        "    fire.Fire(Calculator)",
+        ""
+      ],
+    "description": "Call Fire on a class"
   },
   "io-make-dir": {
     "prefix": "io-make-dir",
@@ -247,7 +276,7 @@
       "",
       "",
       "if __name__ == \"__main__\":",
-      "     main()",
+      "    main()",
       ""
     ],
     "description": "Add main function with no argument"
