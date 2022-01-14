@@ -38,32 +38,33 @@
     "security.workspace.trust.startupPrompt": "never",
     "shellLauncher.shells.windows": [
         {
-            "shell": "C:\\Windows\\System32\\cmd.exe",
-            "label": "Cmd"
+            "label": "Bash",
+            "shell": "C:\\Windows\\System32\\bash.exe"
         },
         {
-            "shell": "C:\\Program Files\\Git\\bin\\bash.exe",
-            "label": "Git Bash"
+            "label": "Cmd",
+            "shell": "C:\\Windows\\System32\\cmd.exe"
         },
         {
-            "shell": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-            "label": "PowerShell"
+            "label": "Git Bash",
+            "shell": "C:\\Program Files\\Git\\bin\\bash.exe"
         },
         {
-            "shell": "C:\\Windows\\System32\\bash.exe",
-            "label": "WSL Bash"
+            "label": "PowerShell",
+            "shell": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
         },
         {
-            "shell": "C:\\Windows\\System32\\wsl.exe",
-            "args": ["-d", "Ubuntu-20.04"],
-            "label": "WSL Ubuntu-20.04"
+            "label": "WSL",
+            "shell": "C:\\Windows\\System32\\wsl.exe"
+            //"args": ["-d", "Ubuntu-20.04"],
+            //"label": "WSL Ubuntu-20.04"
         }
     ],
     "telemetry.telemetryLevel": "off",
-    "terminal.integrated.defaultProfile.windows": "WSL Ubuntu",
+    "terminal.integrated.defaultProfile.windows": "WSL",
     "terminal.integrated.fontSize": 12,
     "terminal.integrated.profiles.windows": {
-        "Command Prompt": {
+        "Cmd": {
             "path": [
                 "${env:windir}\\Sysnative\\cmd.exe",
                 "${env:windir}\\System32\\cmd.exe"
@@ -78,14 +79,12 @@
             "source": "PowerShell",
             "icon": "terminal-powershell"
         },
-        "WSL Ubuntu": {
-            "path": "C:\\WINDOWS\\System32\\wsl.exe",
-            "args": [
-                "-d",
-                "Ubuntu"
-            ]
+        "WSL": {
+            "path": "C:\\WINDOWS\\System32\\wsl.exe"
+            // "args": ["-d", "Ubuntu"]
         }
     },
+    "window.zoomLevel": -1,
     // https://code.visualstudio.com/api/references/theme-color
     "workbench.colorCustomizations": {
         "tree.indentGuidesStroke": "#fffb04",
@@ -140,6 +139,9 @@
     "[bat]": {
         "editor.tabSize": 2
     },
+    "[css]": {
+        "editor.tabSize": 2
+    },
     "[dockerfile]": {
         "editor.tabSize": 2
     },
@@ -168,6 +170,5 @@
     },
     "[shellscript]": {
         "editor.tabSize": 2
-    },
-    "window.zoomLevel": -1
+    }
 }
