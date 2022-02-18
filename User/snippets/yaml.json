@@ -1,0 +1,64 @@
+{
+    "cfn-base": {
+        "prefix": "cfn-base",
+        "description": "CFN base template",
+        "body": [
+            "AWSTemplateFormatVersion: '2010-09-09'",
+            "Description: TODO",
+            "",
+            "Parameters:",
+            "  Name:",
+            "    Description: Name",
+            "    Type: String",
+            "",
+            "Resources:",
+            "",
+            "Outputs:",
+            "  Name:",
+            "    Description: Name",
+            "    Value: !Ref Name",
+            "    Export:",
+            "      Name: !Sub ${AWS::StackName}:name",
+            ""
+        ]
+    },
+    "cfn-parameter-stage": {
+        "prefix": "cfn-parameter-stage",
+        "description": "CFN Parameter - Stage [dev/stg/prd]",
+        "body": [
+            "  Stage:",
+            "    Description: Stage to deploy",
+            "    Type: String",
+            "    AllowedValues: [dev, stg, prd]",
+            "    Default: dev",
+            ""
+        ]
+    },
+    "cfn-resource-s3-log-bucket": {
+        "prefix": "cfn-resource-s3-log-bucket",
+        "description": "CFN Resource - S3 Log Bucket",
+        "body": [
+            "  LogsBucket:",
+            "    Type: AWS::S3::Bucket",
+            "    DeletionPolicy: Retain",
+            "    UpdateReplacePolicy: Retain",
+            "    Properties:",
+            "      AccessControl: LogDeliveryWrite",
+            "      BucketName: !Ref BucketName",
+            "      LifecycleConfiguration:",
+            "        Rules:",
+            "          - Id: DeleteContentAfter1Day",
+            "            Status: Enabled",
+            "            ExpirationInDays: 1",
+            "      PublicAccessBlockConfiguration:",
+            "        BlockPublicAcls: true",
+            "        BlockPublicPolicy: true",
+            "        IgnorePublicAcls: true",
+            "        RestrictPublicBuckets: true",
+            "      Tags:",
+            "        - Key: Billing",
+            "          Value: !Ref TagBillingValue",
+            ""
+        ]
+    }
+}

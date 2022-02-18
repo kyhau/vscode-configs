@@ -18,12 +18,12 @@
     "explorer.confirmDragAndDrop": false,
     "files.autoSave": "afterDelay",
     "files.trimTrailingWhitespace": true,
+    "go.lintOnSave": "off",
     "json.schemas": [],
     "notebook.cellToolbarLocation": {
         "default": "right",
         "jupyter-notebook": "left"
     },
-    "python.autoUpdateLanguageServer": true,
     "python.languageServer": "Pylance",
     "python.linting.enabled": true,
     "python.linting.pylintArgs": [
@@ -62,6 +62,7 @@
     ],
     "telemetry.telemetryLevel": "off",
     "terminal.integrated.defaultProfile.windows": "WSL",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
     "terminal.integrated.fontSize": 12,
     "terminal.integrated.profiles.windows": {
         "Cmd": {
@@ -144,6 +145,11 @@
     },
     "[dockerfile]": {
         "editor.tabSize": 2
+    },
+    "[go]": {
+        "editor.formatOnSave": false,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4
     },
     "[groovy]": {
         "editor.tabSize": 4
