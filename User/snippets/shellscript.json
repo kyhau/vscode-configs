@@ -7,5 +7,12 @@
             "set -e"
         ],
         "description": "Add shebang line",
+    },
+    "aws-cli-stack-output": {
+        "prefix": ["aws-cli-stack-output"],
+        "body": [
+            "aws cloudformation describe-stacks --stack-name ${STACK_NAME} --query \"Stacks[0].Outputs[?OutputKey=='Imageid'].OutputValue\" --output text"
+        ],
+        "description": "Add aws cli cmd for getting stack output",
     }
 }

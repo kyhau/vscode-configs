@@ -1,4 +1,44 @@
 {
+    "cfn-importvalue-sub": {
+        "prefix": "cfn-importvalue-sub",
+        "description": "CFN ImportValue + Sub",
+        "body": [
+            "RepositoryName:",
+            "  Fn::ImportValue: !Sub ${CommonStackName}:EcrRepositoryName"
+        ]
+    },
+    "cfn-sub-importvalue": {
+        "prefix": "cfn-sub-importvalue",
+        "description": "CFN Sub + ImportValue",
+        "body": [
+            "Name:",
+            "  Fn::Sub:",
+            "    - myapp.${SubDomain}.${HostedZoneName}",
+            "    - HostedZoneName: !ImportValue HostedZone-zone-name",
+            "      SubDomain: !ImportValue HostedZone-subzone-name"
+        ]
+    },
+    "cfn-sub-importvalue-sub": {
+        "prefix": "cfn-sub-importvalue-sub",
+        "description": "CFN Sub + ImportValue + Sub",
+        "body": [
+            "Name:",
+            "  Fn::Sub:",
+            "    - myapp.${ZoneName}",
+            "    - ZoneName:",
+            "        Fn::ImportValue:",
+            "          !Sub ${Route53StackName}-zone-name"
+        ]
+    },
+    "cfn-userdata-base64-sub": {
+        "prefix": "cfn-userdata-base64-sub",
+        "description": "CFN UserData + Base64 + Sub",
+        "body": [
+            "UserData:",
+            "  Fn::Base64: !Sub |",
+            "      #!/bin/bash -e"
+        ]
+    },
     "cfn-base": {
         "prefix": "cfn-base",
         "description": "CFN base template",
@@ -22,6 +62,19 @@
             ""
         ]
     },
+    "cfn-output": {
+        "prefix": "cfn-output",
+        "description": "CFN base template",
+        "body": [
+            "Outputs:",
+            "  Name:",
+            "    Description: Name",
+            "    Value: !Ref Name",
+            "    Export:",
+            "      Name: !Sub ${AWS::StackName}:name",
+            ""
+        ]
+    },
     "cfn-parameter-stage": {
         "prefix": "cfn-parameter-stage",
         "description": "CFN Parameter - Stage [dev/stg/prd]",
@@ -30,8 +83,7 @@
             "    Description: Stage to deploy",
             "    Type: String",
             "    AllowedValues: [dev, stg, prd]",
-            "    Default: dev",
-            ""
+            "    Default: dev"
         ]
     },
     "cfn-resource-s3-log-bucket": {
@@ -57,8 +109,7 @@
             "        RestrictPublicBuckets: true",
             "      Tags:",
             "        - Key: Billing",
-            "          Value: !Ref TagBillingValue",
-            ""
+            "          Value: !Ref TagBillingValue"
         ]
     }
 }
