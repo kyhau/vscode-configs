@@ -19,6 +19,7 @@
     "files.autoSave": "afterDelay",
     "files.trimTrailingWhitespace": true,
     "go.lintOnSave": "off",
+    "go.toolsManagement.autoUpdate": true,
     "json.schemas": [],
     "notebook.cellToolbarLocation": {
         "default": "right",
