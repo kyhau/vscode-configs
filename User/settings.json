@@ -1,6 +1,5 @@
 {
     "aws.logLevel": "info",
-    "aws.onDefaultRegionMissing": "ignore",
     "aws.samcli.location": "C:\\Program Files\\Amazon\\AWSSAMCLI\\bin\\sam.cmd",
     "aws.telemetry": false,
     "diffEditor.ignoreTrimWhitespace": false,
@@ -8,7 +7,11 @@
     "editor.detectIndentation": false,
     "editor.fontSize": 12,
     "editor.insertSpaces": true,
-    "editor.quickSuggestions":true,
+    "editor.quickSuggestions":{
+        "comments": "on",
+        "strings": "on",
+        "other": "on"
+    },
     "editor.snippetSuggestions":"top",
     "editor.suggestFontSize": 12,
     "editor.suggestSelection": "first",
@@ -21,6 +24,7 @@
     "go.lintOnSave": "off",
     "go.toolsManagement.autoUpdate": true,
     "json.schemas": [],
+    "markdown.preview.fontSize": 13,
     "notebook.cellToolbarLocation": {
         "default": "right",
         "jupyter-notebook": "left"
@@ -33,6 +37,7 @@
     ],
     "python.linting.pylintEnabled": true,
     "redhat.telemetry.enabled": false,
+    "scm.inputFontSize": 12,
     "search.useGlobalIgnoreFiles": true,
     // https://code.visualstudio.com/docs/editor/workspace-trust
     "security.workspace.trust.enabled": false,
@@ -86,7 +91,6 @@
             // "args": ["-d", "Ubuntu"]
         }
     },
-    "window.zoomLevel": -1,
     // https://code.visualstudio.com/api/references/theme-color
     "workbench.colorCustomizations": {
         "tree.indentGuidesStroke": "#fffb04",
@@ -159,13 +163,18 @@
         "editor.tabSize": 2
     },
     "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.tabSize": 2
     },
     "[javascriptreact]": {
         "editor.tabSize": 2
     },
     "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features",
         "editor.tabSize": 2
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[powershell]": {
         "editor.tabSize": 2
@@ -177,5 +186,9 @@
     },
     "[shellscript]": {
         "editor.tabSize": 2
-    }
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "window.zoomLevel": -1
 }
