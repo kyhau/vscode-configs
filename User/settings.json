@@ -1,8 +1,10 @@
 {
     "aws.logLevel": "info",
+    "aws.samcli.enableCodeLenses": false,
     "aws.samcli.location": "C:\\Program Files\\Amazon\\AWSSAMCLI\\bin\\sam.cmd",
     "aws.telemetry": false,
     "diffEditor.ignoreTrimWhitespace": false,
+    "editor.acceptSuggestionOnEnter": "on",
     "editor.codeLens": true,
     "editor.detectIndentation": false,
     "editor.fontSize": 12,
@@ -13,6 +15,8 @@
         "other": "on"
     },
     "editor.snippetSuggestions":"top",
+    "editor.suggest.preview": true,
+    "editor.suggest.showMethods": true,
     "editor.suggestFontSize": 12,
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "on",
@@ -42,36 +46,16 @@
     // https://code.visualstudio.com/docs/editor/workspace-trust
     "security.workspace.trust.enabled": false,
     "security.workspace.trust.startupPrompt": "never",
-    "shellLauncher.shells.windows": [
-        {
-            "label": "Bash",
-            "shell": "C:\\Windows\\System32\\bash.exe"
-        },
-        {
-            "label": "Cmd",
-            "shell": "C:\\Windows\\System32\\cmd.exe"
-        },
-        {
-            "label": "Git Bash",
-            "shell": "C:\\Program Files\\Git\\bin\\bash.exe"
-        },
-        {
-            "label": "PowerShell",
-            "shell": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
-        },
-        {
-            "label": "WSL",
-            "shell": "C:\\Windows\\System32\\wsl.exe"
-            //"args": ["-d", "Ubuntu-20.04"],
-            //"label": "WSL Ubuntu-20.04"
-        }
-    ],
     "telemetry.telemetryLevel": "off",
-    "terminal.integrated.defaultProfile.windows": "WSL",
+    "terminal.integrated.defaultProfile.windows": "Ubuntu-20.04 (WSL)",
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "terminal.integrated.fontSize": 12,
     "terminal.integrated.profiles.windows": {
-        "Cmd": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
             "path": [
                 "${env:windir}\\Sysnative\\cmd.exe",
                 "${env:windir}\\System32\\cmd.exe"
@@ -82,13 +66,8 @@
         "Git Bash": {
             "source": "Git Bash"
         },
-        "PowerShell": {
-            "source": "PowerShell",
-            "icon": "terminal-powershell"
-        },
-        "WSL": {
+        "Ubuntu-20.04 (WSL)": {
             "path": "C:\\WINDOWS\\System32\\wsl.exe"
-            // "args": ["-d", "Ubuntu"]
         }
     },
     // https://code.visualstudio.com/api/references/theme-color
