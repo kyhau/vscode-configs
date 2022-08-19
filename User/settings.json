@@ -1,5 +1,6 @@
 {
     "aws.logLevel": "info",
+    "aws.profile": "profile:default",
     "aws.samcli.enableCodeLenses": false,
     "aws.samcli.location": "C:\\Program Files\\Amazon\\AWSSAMCLI\\bin\\sam.cmd",
     "aws.telemetry": false,
@@ -21,6 +22,28 @@
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "on",
     "editor.tabSize": 4,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                // Comment - from #637777
+                "scope": [
+                    "comment",
+                    "comment.block.documentation",
+                    "comment.block.documentation.js",
+                    "comment.line.double-slash.js",
+                    "storage.type.class.jsdoc",
+                    "entity.name.type.instance.jsdoc",
+                    "variable.other.jsdoc",
+                    "punctuation.definition.comment",
+                    "punctuation.definition.comment.begin.documentation",
+                    "punctuation.definition.comment.end.documentation"
+                ],
+                "settings": {
+                    "foreground": "#5f7e97"
+                }
+            }
+        ]
+    },
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "files.autoSave": "afterDelay",
@@ -70,6 +93,7 @@
             "path": "C:\\WINDOWS\\System32\\wsl.exe"
         }
     },
+    "typescript.updateImportsOnFileMove.enabled": "always",
     // https://code.visualstudio.com/api/references/theme-color
     "workbench.colorCustomizations": {
         "tree.indentGuidesStroke": "#fffb04",
@@ -78,6 +102,17 @@
             "sideBar.background": "#000000"
         },
         "[Night Owl (No Italics)]": {
+            // https://github.com/sdras/night-owl-vscode-theme/blob/main/themes/Night%20Owl-color-theme-noitalic.json
+            // From #5f7e97
+            "activityBar.foreground": "#cce5f9",
+            "sideBarTitle.foreground": "#cce5f9",
+            // From #5f7e97
+            "sideBarSectionHeader.foreground": "#7da6c7",
+            "list.inactiveSelectionForeground": "#7da6c7",
+            "tab.inactiveForeground": "#7da6c7",
+            "tab.unfocusedActiveForeground": "#7da6c7",
+            "tab.unfocusedInactiveForeground": "#7da6c7",
+            // Other
             "terminal.ansiGreen": "#497a49"
         }
     },
