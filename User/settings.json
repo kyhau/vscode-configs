@@ -44,6 +44,12 @@
             }
         ]
     },
+    "emojisense.languages": {
+        "json": true,
+        "markdown": true,
+        "plaintext": false,
+        "scminput": true // language used in the source control commit message box
+    },
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "files.autoSave": "afterDelay",
