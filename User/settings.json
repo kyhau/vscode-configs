@@ -48,7 +48,8 @@
         "json": true,
         "markdown": true,
         "plaintext": false,
-        "scminput": true // language used in the source control commit message box
+        "scminput": true, // language used in the source control commit message box
+        "yaml": true
     },
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
