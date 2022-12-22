@@ -1,21 +1,22 @@
 {
     "aws.logLevel": "info",
-    "aws.profile": "profile:default",
     "aws.samcli.enableCodeLenses": false,
     "aws.samcli.location": "C:\\Program Files\\Amazon\\AWSSAMCLI\\bin\\sam.cmd",
     "aws.telemetry": false,
+    "codeQL.telemetry.enableTelemetry": false,
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.acceptSuggestionOnEnter": "on",
     "editor.codeLens": true,
     "editor.detectIndentation": false,
     "editor.fontSize": 12,
+    "editor.hover.enabled": true,
     "editor.insertSpaces": true,
-    "editor.quickSuggestions":{
+    "editor.quickSuggestions": {
         "comments": "on",
         "strings": "on",
         "other": "on"
     },
-    "editor.snippetSuggestions":"top",
+    "editor.snippetSuggestions": "top",
     "editor.suggest.preview": true,
     "editor.suggest.showMethods": true,
     "editor.suggestFontSize": 12,
@@ -160,8 +161,7 @@
         "!Split",
         "!Split sequence"
     ],
-    "yaml.schemas": {
-    },
+    "yaml.schemas": {},
     "yaml.validate": false,
     "[bat]": {
         "editor.tabSize": 2
