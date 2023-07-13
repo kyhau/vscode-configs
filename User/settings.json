@@ -78,7 +78,7 @@
     "security.workspace.trust.enabled": false,
     "security.workspace.trust.startupPrompt": "never",
     "telemetry.telemetryLevel": "off",
-    "terminal.integrated.defaultProfile.windows": "Ubuntu-20.04 (WSL)",
+    "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "terminal.integrated.fontSize": 12,
     "terminal.integrated.profiles.windows": {
@@ -97,7 +97,7 @@
         "Git Bash": {
             "source": "Git Bash"
         },
-        "Ubuntu-20.04 (WSL)": {
+        "Ubuntu (WSL)": {
             "path": "C:\\WINDOWS\\System32\\wsl.exe"
         }
     },
