@@ -1,4 +1,5 @@
 {
+    "aws.codeWhisperer.includeSuggestionsWithCodeReferences": false,
     "aws.logLevel": "info",
     "aws.samcli.enableCodeLenses": false,
     "aws.samcli.location": "C:\\Program Files\\Amazon\\AWSSAMCLI\\bin\\sam.cmd",
@@ -217,5 +218,6 @@
     "editor.inlineSuggest.enabled": true,
     "win-ca.inject": "append",
     "github.copilot-labs.showBrushesLenses": false,
-    "github.copilot-labs.showTestGenerationLenses": true
+    "github.copilot-labs.showTestGenerationLenses": true,
+    "window.zoomLevel": -1
 }
