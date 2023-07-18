@@ -208,8 +208,14 @@
     "[shellscript]": {
         "editor.tabSize": 2
     },
+    "[typescript]": {
+        "editor.tabSize": 2
+    },
     "[yaml]": {
         "editor.defaultFormatter": "redhat.vscode-yaml"
     },
-    "window.zoomLevel": -1
+    "editor.inlineSuggest.enabled": true,
+    "win-ca.inject": "append",
+    "github.copilot-labs.showBrushesLenses": false,
+    "github.copilot-labs.showTestGenerationLenses": true
 }
