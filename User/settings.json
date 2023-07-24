@@ -8,7 +8,7 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.acceptSuggestionOnEnter": "on",
     "editor.codeLens": true,
-    "editor.detectIndentation": false,
+    "editor.detectIndentation": true,
     "editor.fontSize": 12,
     "editor.hover.enabled": true,
     "editor.insertSpaces": true,
@@ -213,7 +213,9 @@
         "editor.tabSize": 2
     },
     "[yaml]": {
-        "editor.defaultFormatter": "redhat.vscode-yaml"
+        "editor.autoIndent": "advanced",
+        "editor.defaultFormatter": "redhat.vscode-yaml",
+        "editor.tabSize": 2
     },
     "editor.inlineSuggest.enabled": true,
     "win-ca.inject": "append",
