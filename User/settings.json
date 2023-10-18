@@ -5,12 +5,14 @@
     "aws.samcli.location": "C:\\Program Files\\Amazon\\AWSSAMCLI\\bin\\sam.cmd",
     "aws.telemetry": false,
     "codeQL.telemetry.enableTelemetry": false,
+    "diffEditor.hideUnchangedRegions.enabled": true,
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.acceptSuggestionOnEnter": "on",
     "editor.codeLens": true,
     "editor.detectIndentation": true,
     "editor.fontSize": 12,
     "editor.hover.enabled": true,
+    "editor.inlineSuggest.enabled": true,
     "editor.insertSpaces": true,
     "editor.quickSuggestions": {
         "comments": "on",
@@ -57,6 +59,8 @@
     "explorer.confirmDragAndDrop": false,
     "files.autoSave": "afterDelay",
     "files.trimTrailingWhitespace": true,
+    "github.copilot-labs.showBrushesLenses": false,
+    "github.copilot-labs.showTestGenerationLenses": true,
     "go.lintOnSave": "off",
     "go.toolsManagement.autoUpdate": true,
     "json.schemas": [],
@@ -103,6 +107,7 @@
         }
     },
     "typescript.updateImportsOnFileMove.enabled": "always",
+    "win-ca.inject": "append",
     // https://code.visualstudio.com/api/references/theme-color
     "workbench.colorCustomizations": {
         "tree.indentGuidesStroke": "#fffb04",
@@ -217,9 +222,5 @@
         "editor.defaultFormatter": "redhat.vscode-yaml",
         "editor.tabSize": 2
     },
-    "editor.inlineSuggest.enabled": true,
-    "win-ca.inject": "append",
-    "github.copilot-labs.showBrushesLenses": false,
-    "github.copilot-labs.showTestGenerationLenses": true,
     "window.zoomLevel": -1
 }
