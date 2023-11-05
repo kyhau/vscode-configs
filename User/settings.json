@@ -70,12 +70,6 @@
         "jupyter-notebook": "left"
     },
     "python.languageServer": "Pylance",
-    "python.linting.enabled": true,
-    "python.linting.pylintArgs": [
-        "--enable=W0614",
-        "--logging-format-style=fstr"
-    ],
-    "python.linting.pylintEnabled": true,
     "redhat.telemetry.enabled": false,
     "scm.inputFontSize": 12,
     "search.useGlobalIgnoreFiles": true,
