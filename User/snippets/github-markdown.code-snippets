@@ -1,0 +1,43 @@
+{
+    // Place your snippets for github markdown at here.
+    "github-markdown-note": {
+        "prefix": ["github-markdown-note"],
+        "body": [
+            "> [!NOTE]",
+			"> Useful information that users should know, even when skimming content."
+        ],
+        "description": "Add github markdown NOTE",
+    },
+	"github-markdown-top": {
+        "prefix": ["github-markdown-top"],
+        "body": [
+            "> [!TIP]",
+			"> Helpful advice for doing things better or more easily."
+        ],
+        "description": "Add github markdown TIP",
+    },
+	"github-markdown-important": {
+        "prefix": ["github-markdown-important"],
+        "body": [
+            "> [!IMPORTANT]",
+			"> Key information users need to know to achieve their goal."
+        ],
+        "description": "Add github markdown IMPORTANT",
+    },
+	"github-markdown-warning": {
+        "prefix": ["github-markdown-warning"],
+        "body": [
+            "> [!WARNING]",
+			"> Urgent info that needs immediate user attention to avoid problems."
+        ],
+        "description": "Add github markdown WARNING",
+    },
+	"github-markdown-caution": {
+        "prefix": ["github-markdown-caution"],
+        "body": [
+            "> [!CAUTION]",
+			"> Advises about risks or negative outcomes of certain actions."
+        ],
+        "description": "Add github markdown CAUTION",
+    }
+}
