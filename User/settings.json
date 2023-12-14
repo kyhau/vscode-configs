@@ -197,6 +197,14 @@
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
+    "[markdown]":  {
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": true,
+            "strings": true
+        },
+        "editor.snippetSuggestions": "top"
+    },
     "[powershell]": {
         "editor.tabSize": 2
     },
