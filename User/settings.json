@@ -1,4 +1,6 @@
 {
+    "amazonQ.showInlineCodeSuggestionsWithCodeReferences": false,
+    "amazonQ.telemetry": false,
     "aws.codeWhisperer.includeSuggestionsWithCodeReferences": false,
     "aws.logLevel": "info",
     "aws.samcli.enableCodeLenses": false,
@@ -78,8 +80,10 @@
     "security.workspace.trust.startupPrompt": "never",
     "telemetry.telemetryLevel": "off",
     "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
-    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "terminal.integrated.enableMultiLinePasteWarning": "auto",
+    "terminal.integrated.fontFamily": "Consolas, 'Courier New', monospace",
     "terminal.integrated.fontSize": 12,
+    "terminal.integrated.fontWeight": "normal",
     "terminal.integrated.profiles.windows": {
         "PowerShell": {
             "source": "PowerShell",
@@ -103,6 +107,7 @@
     "typescript.updateImportsOnFileMove.enabled": "always",
     "win-ca.inject": "append",
     // https://code.visualstudio.com/api/references/theme-color
+    "window.zoomLevel": -1,
     "workbench.colorCustomizations": {
         "tree.indentGuidesStroke": "#fffb04",
         "[Monokai Dimmed]": {
@@ -125,13 +130,16 @@
         }
     },
     "workbench.colorTheme": "Night Owl (No Italics)",
-    "workbench.preferredDarkColorTheme": "Monokai Dimmed",
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.tree.indent": 20,
-    "workbench.tree.renderIndentGuides": "always",
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
     },
+    "workbench.preferredDarkColorTheme": "Monokai Dimmed",
+    "workbench.settings.applyToAllProfiles": [
+        "amazonQ.telemetry"
+    ],
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.tree.indent": 20,
+    "workbench.tree.renderIndentGuides": "always",
     "yaml.customTags": [
         "!And",
         "!And sequence",
@@ -197,7 +205,7 @@
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "[markdown]":  {
+    "[markdown]": {
         "editor.quickSuggestions": {
             "other": true,
             "comments": true,
@@ -223,6 +231,5 @@
         "editor.autoIndent": "advanced",
         "editor.defaultFormatter": "redhat.vscode-yaml",
         "editor.tabSize": 2
-    },
-    "window.zoomLevel": -1
+    }
 }
