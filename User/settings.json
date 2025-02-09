@@ -1,7 +1,6 @@
 {
     "amazonQ.showInlineCodeSuggestionsWithCodeReferences": false,
     "amazonQ.telemetry": false,
-    "aws.codeWhisperer.includeSuggestionsWithCodeReferences": false,
     "aws.logLevel": "info",
     "aws.samcli.enableCodeLenses": false,
     "aws.samcli.location": "C:\\Program Files\\Amazon\\AWSSAMCLI\\bin\\sam.cmd",
@@ -61,6 +60,15 @@
     "explorer.confirmDragAndDrop": false,
     "files.autoSave": "afterDelay",
     "files.trimTrailingWhitespace": true,
+    "github.copilot.chat.enableUserPreferences": true,
+    "github.copilot.chat.editor.temporalContext.enabled": true,
+    "github.copilot.chat.edits.codesearch.enabled": true,
+    "github.copilot.chat.edits.temporalContext.enabled": true,
+    "github.copilot.chat.generateTests.codeLens": true,
+    "github.copilot.chat.languageContext.typescript.enabled": true,
+    "github.copilot.chat.search.semanticTextResults": true,
+    "github.copilot.chat.scopeSelection": true,
+    "github.copilot.nextEditSuggestions.enabled": true,
     "github.copilot-labs.showBrushesLenses": false,
     "github.copilot-labs.showTestGenerationLenses": true,
     "go.lintOnSave": "off",
@@ -71,6 +79,7 @@
         "default": "right",
         "jupyter-notebook": "left"
     },
+    "python.analysis.generateWithTypeAnnotation": true,
     "python.languageServer": "Pylance",
     "redhat.telemetry.enabled": false,
     "scm.inputFontSize": 12,
@@ -80,10 +89,8 @@
     "security.workspace.trust.startupPrompt": "never",
     "telemetry.telemetryLevel": "off",
     "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
-    "terminal.integrated.enableMultiLinePasteWarning": "auto",
-    "terminal.integrated.fontFamily": "Consolas, 'Courier New', monospace",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
     "terminal.integrated.fontSize": 12,
-    "terminal.integrated.fontWeight": "normal",
     "terminal.integrated.profiles.windows": {
         "PowerShell": {
             "source": "PowerShell",
@@ -106,8 +113,8 @@
     },
     "typescript.updateImportsOnFileMove.enabled": "always",
     "win-ca.inject": "append",
-    // https://code.visualstudio.com/api/references/theme-color
     "window.zoomLevel": -1,
+    // https://code.visualstudio.com/api/references/theme-color
     "workbench.colorCustomizations": {
         "tree.indentGuidesStroke": "#fffb04",
         "[Monokai Dimmed]": {
@@ -134,9 +141,6 @@
         "*.ipynb": "jupyter-notebook"
     },
     "workbench.preferredDarkColorTheme": "Monokai Dimmed",
-    "workbench.settings.applyToAllProfiles": [
-        "amazonQ.telemetry"
-    ],
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 20,
     "workbench.tree.renderIndentGuides": "always",
