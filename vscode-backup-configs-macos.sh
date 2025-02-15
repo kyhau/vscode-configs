@@ -1,4 +1,6 @@
 #!/bin/bash
+set -e
+
 CODE_VER="Code - Insiders"
 SRC_DIR="$HOME/Library/Application Support/$CODE_VER/User"
 DEST_DIR="$HOME/Workspaces/github/vscode-configs"
