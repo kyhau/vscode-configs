@@ -1,11 +1,13 @@
 {
     "amazonQ.showInlineCodeSuggestionsWithCodeReferences": false,
     "amazonQ.telemetry": false,
+    "aws.codeWhisperer.includeSuggestionsWithCodeReferences": false,
     "aws.logLevel": "info",
     "aws.samcli.enableCodeLenses": false,
-    "aws.samcli.location": "C:\\Program Files\\Amazon\\AWSSAMCLI\\bin\\sam.cmd",
     "aws.telemetry": false,
+    "chat.agent.maxRequests": 30,
     "codeQL.telemetry.enableTelemetry": false,
+    "comments.openView": "never",
     "diffEditor.hideUnchangedRegions.enabled": true,
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.acceptSuggestionOnEnter": "on",
@@ -58,22 +60,40 @@
     },
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
+    "extensions.ignoreRecommendations": true,
+    "extensions.trustedPublishers": [
+        "amazonwebservices",
+        "bierner",
+        "esbenp",
+        "golang",
+        "kddejong",
+        "redhat",
+        "sdras"
+    ],
     "files.autoSave": "afterDelay",
     "files.trimTrailingWhitespace": true,
-    "github.copilot.chat.enableUserPreferences": true,
+    "github.copilot.advanced": {},
+    "github.copilot.chat.commitMessageGeneration.instructions": [],
+    "github.copilot.chat.completionContext.typescript.mode": "on",
     "github.copilot.chat.editor.temporalContext.enabled": true,
     "github.copilot.chat.edits.codesearch.enabled": true,
     "github.copilot.chat.edits.temporalContext.enabled": true,
+    "github.copilot.chat.enableUserPreferences": true,
     "github.copilot.chat.generateTests.codeLens": true,
+    "github.copilot.chat.inlineChatCompletionTrigger.enabled": true,
+    "github.copilot.chat.inlineChatHint.enabled": true,
     "github.copilot.chat.languageContext.typescript.enabled": true,
+    "github.copilot.chat.reviewSelection.instructions": [],
     "github.copilot.chat.search.semanticTextResults": true,
     "github.copilot.chat.scopeSelection": true,
+    "github.copilot.chat.testGeneration.instructions": [],
     "github.copilot.nextEditSuggestions.enabled": true,
     "github.copilot-labs.showBrushesLenses": false,
     "github.copilot-labs.showTestGenerationLenses": true,
     "go.lintOnSave": "off",
     "go.toolsManagement.autoUpdate": true,
     "json.schemas": [],
+    "makefile.configureOnOpen": false,
     "markdown.preview.fontSize": 13,
     "notebook.cellToolbarLocation": {
         "default": "right",
@@ -88,9 +108,23 @@
     "security.workspace.trust.enabled": false,
     "security.workspace.trust.startupPrompt": "never",
     "telemetry.telemetryLevel": "off",
+    //"terminal.explorerKind": "external",  // for using iTerm2 on macOS
+    "terminal.external.osxExec": "iTerm.app", // for using iTerm2 on macOS
+    "terminal.integrated.defaultProfile.osx": "zsh", // macos
     "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
-    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "terminal.integrated.enableMultiLinePasteWarning": "auto",
+    // "terminal.integrated.fontFamily": "MesloLGS NF",  // for using iTerm2 on macOS
     "terminal.integrated.fontSize": 12,
+    "terminal.integrated.fontWeight": "normal",
+    // "terminal.integrated.profiles.osx": {
+    //     "zsh": {
+    //         "path": "/bin/zsh"
+    //     },
+    //     "bash": {
+    //         "path": "/bin/bash",
+    //         "icon": "terminal-bash"
+    //     }
+    // },
     "terminal.integrated.profiles.windows": {
         "PowerShell": {
             "source": "PowerShell",
@@ -112,8 +146,8 @@
         }
     },
     "typescript.updateImportsOnFileMove.enabled": "always",
-    "win-ca.inject": "append",
-    "window.menuBarVisibility": "visible",
+    // "win-ca.inject": "append",
+    // "window.menuBarVisibility": "visible",
     "window.zoomLevel": -1,
     // https://code.visualstudio.com/api/references/theme-color
     "workbench.colorCustomizations": {
@@ -137,11 +171,14 @@
             "terminal.ansiGreen": "#497a49"
         }
     },
-    "workbench.colorTheme": "Night Owl (No Italics)",
+    "workbench.colorTheme": "Night Owl",
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
     },
     "workbench.preferredDarkColorTheme": "Monokai Dimmed",
+    "workbench.settings.applyToAllProfiles": [
+        "amazonQ.telemetry"
+    ],
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 20,
     "workbench.tree.renderIndentGuides": "always",
@@ -198,10 +235,10 @@
     },
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.tabSize": 2
+        "editor.tabSize": 4
     },
     "[javascriptreact]": {
-        "editor.tabSize": 2
+        "editor.tabSize": 4
     },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features",
@@ -224,17 +261,19 @@
     "[python]": {
         "editor.codeActionsOnSave": {
             "source.organizeImports": "explicit"
-        }
+        },
+        "editor.defaultFormatter": "ms-python.black-formatter"
     },
     "[shellscript]": {
         "editor.tabSize": 2
     },
     "[typescript]": {
-        "editor.tabSize": 2
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "[yaml]": {
         "editor.autoIndent": "advanced",
-        "editor.defaultFormatter": "redhat.vscode-yaml",
+        "editor.defaultFormatter": "vscode.markdown-language-features",
         "editor.tabSize": 2
     }
 }

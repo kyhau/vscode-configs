@@ -95,6 +95,15 @@
     ],
     "description": "Add botocore.exceptions.ClientError"
   },
+  "cdk-test-write-template-to-file": {
+    "prefix": "cdk-test-write-template-to-file",
+    "body": [
+      "with open(\"test_template.json\", \"w\") as f:",
+      "    import json",
+      "    json.dump(template.to_json(), f, indent=2)"
+    ],
+    "description": "Write CDK template to file"
+  },
   "click-command-main": {
     "prefix": "click-command-main",
     "body": [
