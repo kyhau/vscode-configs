@@ -113,6 +113,7 @@
     },
     "typescript.updateImportsOnFileMove.enabled": "always",
     "win-ca.inject": "append",
+    "window.menuBarVisibility": "visible",
     "window.zoomLevel": -1,
     // https://code.visualstudio.com/api/references/theme-color
     "workbench.colorCustomizations": {
